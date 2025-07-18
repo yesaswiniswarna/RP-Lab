@@ -1,0 +1,19 @@
+fn main() {
+    let a = 10;
+    let b = 5;
+    let operator = '+';
+
+    match operator {
+        '+' => println!("{} + {} = {}", a, b, a + b),
+        '-' => println!("{} - {} = {}", a, b, a - b),
+        '*' => println!("{} * {} = {}", a, b, a * b),
+        '/' => {
+            if b != 0 {
+                println!("{} / {} = {}", a, b, a / b)
+            } else {
+                println!("Cannot divide by zero");
+            }
+        }
+        _ => println!("Invalid operator"),
+    }
+}
