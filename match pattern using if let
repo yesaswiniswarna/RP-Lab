@@ -1,0 +1,9 @@
+fn main() {
+    let some_value = Some(10);
+
+    if let Some(x) = some_value {
+        println!("Matched value: {}", x);
+    } else {
+        println!("No match found");
+    }
+}
